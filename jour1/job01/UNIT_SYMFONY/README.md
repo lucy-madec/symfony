@@ -25,8 +25,9 @@ Vérification de la version installée :
 ```
 jour1/
 └── job01/
-    ├── images/         # Dossier contenant les captures d'écran
-    └── README.md       # Documentation du projet
+    └── UNIT_SYMFONY/       # Dossier principal du projet
+        ├── images/         # Dossier contenant les captures d'écran
+        └── README.md       # Documentation du projet
 ```
 
 ## Étapes Suivantes
