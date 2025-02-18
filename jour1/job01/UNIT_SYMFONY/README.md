@@ -180,6 +180,32 @@ Voici les principales différences entre les deux installations :
 | Validation | Incluse | À installer si nécessaire |
 | Emails | Préconfigurés | À installer si nécessaire |
 
+## Configuration de la Base de Données
+
+### Configuration du fichier .env
+
+La connexion à la base de données est configurée dans le fichier `.env` avec la ligne suivante :
+```
+DATABASE_URL="mysql://symfony:symfony@symfony_db:3306/symfony?serverVersion=8&charset=utf8mb4"
+```
+
+Décomposition de l'URL de connexion :
+| Élément | Description |
+|---------|-------------|
+| mysql:// | Utilisation de MySQL comme moteur de base de données |
+| symfony:symfony | Nom d'utilisateur et mot de passe définis |
+| @symfony_db | Nom du conteneur MySQL défini dans docker-compose.yml |
+| :3306 | Port standard de MySQL |
+| /symfony | Nom de la base de données |
+
+### Permissions des fichiers
+
+Les commandes suivantes ont été exécutées pour configurer les permissions appropriées :
+```bash
+chown -R www-data:www-data /var/www/html  # Définit l'utilisateur et le groupe
+chmod -R 775 var                          # Définit les permissions d'écriture
+```
+
 ## Structure du Projet Mise à Jour
 
 ```
@@ -196,9 +222,8 @@ UNIT_SYMFONY/
 ## Étapes Suivantes
 
 Les prochaines étapes consisteront à :
-1. Configurer la base de données
-2. Créer les premières routes
-3. Mettre en place la sécurité
+1. Créer les premières routes
+2. Mettre en place la sécurité
 
 ---
 *Documentation créée le 18 février 2025*
