@@ -131,11 +131,60 @@ Cette configuration Nginx :
 - Configure le traitement des fichiers PHP via PHP-FPM
 - Gère les routes Symfony correctement
 
+## Installation de Symfony
+
+### Commande d'installation
+
+```bash
+composer create-project symfony/website-skeleton app
+```
+
+#### Décomposition de la commande :
+
+| Élément | Description |
+|---------|-------------|
+| composer | Outil de gestion de dépendances PHP pour installer des bibliothèques et frameworks |
+| create-project | Option Composer pour créer un nouveau projet à partir d'un package |
+| symfony/website-skeleton | Package source avec la structure complète d'un site web Symfony |
+| app | Nom du dossier cible pour l'installation |
+
+### Les deux types d'installations Symfony
+
+1. **symfony/website-skeleton** (Installation complète)
+   - Inclut tous les packages nécessaires pour un site web complet
+   - Contient Doctrine ORM pour la base de données
+   - Inclut Twig pour les templates
+   - Système de formulaires intégré
+   - Système de sécurité
+   - Validation des données
+   - Idéal pour : Sites web complets avec base de données
+
+2. **symfony/skeleton** (Installation minimale)
+   - Installation de base très légère
+   - Contient uniquement le framework core
+   - Pas de ORM, templates, ou formulaires par défaut
+   - Permet d'ajouter uniquement ce dont on a besoin
+   - Idéal pour : APIs, microservices, ou projets spécifiques
+
+### Comparaison des installations
+
+Voici les principales différences entre les deux installations :
+
+| Fonctionnalité | website-skeleton | skeleton |
+|----------------|------------------|-----------|
+| Taille initiale | Plus lourde | Très légère |
+| Base de données | Préconfigurée (Doctrine) | À installer si nécessaire |
+| Templates | Twig inclus | À installer si nécessaire |
+| Formulaires | Inclus | À installer si nécessaire |
+| Sécurité | Préconfigurée | À installer si nécessaire |
+| Validation | Incluse | À installer si nécessaire |
+| Emails | Préconfigurés | À installer si nécessaire |
+
 ## Structure du Projet Mise à Jour
 
 ```
 UNIT_SYMFONY/
-├── app/                    # Code source Symfony (créé ultérieurement)
+├── app/                    # Projet Symfony principal (website-skeleton)
 ├── nginx/                  # Configuration Nginx
 │   └── default.conf
 ├── docker-compose.yml      # Configuration des services
@@ -147,9 +196,9 @@ UNIT_SYMFONY/
 ## Étapes Suivantes
 
 Les prochaines étapes consisteront à :
-1. Créer un nouveau projet Symfony
-2. Configurer Docker pour notre environnement de développement
-3. Mettre en place la base de données
+1. Configurer la base de données
+2. Créer les premières routes
+3. Mettre en place la sécurité
 
 ---
 *Documentation créée le 18 février 2025*
