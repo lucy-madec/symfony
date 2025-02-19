@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administration{% endblock %}
+
+{% block body %}
+    <div class="container py-5">
+        <h1>Dashboard Administrateur</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Utilisateurs</h5>
+                        <p class="card-text">Gérez les utilisateurs de l'application.</p>
+                        <a href="#" class="btn btn-primary">Gérer les utilisateurs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Configuration</h5>
+                        <p class="card-text">Configurez les paramètres de l'application.</p>
+                        <a href="#" class="btn btn-primary">Paramètres</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Statistiques</h5>
+                        <p class="card-text">Consultez les statistiques de l'application.</p>
+                        <a href="#" class="btn btn-primary">Voir les stats</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

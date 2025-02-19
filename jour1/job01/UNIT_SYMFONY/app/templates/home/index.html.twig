@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - Symfony Learning{% endblock %}
+
+{% block body %}
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">Bienvenue sur Symfony Learning</h1>
+            <p class="lead mb-4">Découvrez comment développer des applications web professionnelles avec Symfony</p>
+            <a href="https://symfony.com/doc/current/index.html" class="btn btn-light btn-lg" target="_blank">
+                Documentation Symfony
+            </a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Documentation</h5>
+                            <p class="card-text">Accédez à la documentation officielle de Symfony pour apprendre les bases et les concepts avancés.</p>
+                            <a href="https://symfony.com/doc/current/index.html" class="btn btn-primary" target="_blank">Lire la doc</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Tutoriels</h5>
+                            <p class="card-text">Suivez nos tutoriels pas à pas pour maîtriser le développement avec Symfony.</p>
+                            <a href="https://symfonycasts.com/" class="btn btn-primary" target="_blank">Voir les tutoriels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Communauté</h5>
+                            <p class="card-text">Rejoignez la communauté Symfony pour échanger et partager vos connaissances.</p>
+                            <a href="https://symfony.com/community" class="btn btn-primary" target="_blank">Rejoindre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

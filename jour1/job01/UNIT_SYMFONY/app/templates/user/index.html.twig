@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Compte{% endblock %}
+
+{% block body %}
+    <div class="container py-5">
+        <h1>Mon Compte</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Profil</h5>
+                        <p class="card-text">Modifiez vos informations personnelles.</p>
+                        <a href="#" class="btn btn-primary">Éditer le profil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sécurité</h5>
+                        <p class="card-text">Gérez vos paramètres de sécurité.</p>
+                        <a href="#" class="btn btn-primary">Paramètres de sécurité</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Préférences</h5>
+                        <p class="card-text">Personnalisez vos préférences.</p>
+                        <a href="#" class="btn btn-primary">Gérer les préférences</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
