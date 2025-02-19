@@ -225,5 +225,78 @@ Les prochaines étapes consisteront à :
 1. Créer les premières routes
 2. Mettre en place la sécurité
 
+## Étape 6 : Application finale
+
+- **Page d'accueil** : Interface moderne avec menu de navigation en haut à droite
+  - Design professionnel avec gradient et sections bien organisées
+  - Menu de connexion/inscription intuitif
+  - Ressources d'apprentissage Symfony clairement présentées
+
+- **Système d'authentification**
+  - Inscription utilisateur avec validation
+  - Connexion sécurisée avec option "Se souvenir de moi"
+  - Gestion des rôles (ROLE_USER et ROLE_ADMIN)
+
+- **Espaces dédiés**
+  - Dashboard administrateur pour les utilisateurs ROLE_ADMIN
+  - Espace personnel pour les utilisateurs ROLE_USER
+  - Redirection intelligente selon le rôle après connexion
+
+- **Ressources d'apprentissage**
+  - Liens directs vers la documentation officielle
+  - Guides étape par étape pour débutants
+  - Accès aux tutoriels vidéo et à la communauté
+
+## Captures d'écran recommandées
+
+Pour démontrer le bon fonctionnement de l'application, il est recommandé de fournir des captures d'écran des éléments suivants :
+
+1. Page d'accueil (pour montrer le design professionnel et le menu)
+2. Page de connexion
+3. Page d'inscription
+4. Dashboard administrateur (connecté en tant qu'admin)
+5. Espace utilisateur (connecté en tant qu'utilisateur standard)
+6. Section des ressources d'apprentissage
+
+## Accès à l'application
+
+- URL : http://localhost:8080
+- Compte admin par défaut :
+  - Email : admin@example.com
+  - Mot de passe : admin123
+
+## Technologies utilisées
+
+- Symfony 7
+- PHP 8.2
+- MySQL 8.0
+- Bootstrap 5.3
+- Font Awesome 6
+- Docker
+
 ---
 *Documentation créée le 18 février 2025*
+
+## Captures d'écran
+
+### Page d'accueil
+![Page d'accueil](images/home.png)
+*Page d'accueil avec menu de navigation et ressources d'apprentissage*
+
+### Authentification
+![Page de connexion](images/login.png)
+*Page de connexion avec option "Se souvenir de moi"*
+
+![Page d'inscription](images/register.png)
+*Formulaire d'inscription avec validation*
+
+### Espaces utilisateurs
+![Dashboard Admin](images/admin.png)
+*Dashboard administrateur avec fonctionnalités de gestion*
+
+![Espace Utilisateur](images/user.png)
+*Espace personnel utilisateur*
+
+### Ressources d'apprentissage
+![Ressources](images/resources.png)
+*Section des ressources d'apprentissage Symfony*
